@@ -1,0 +1,81 @@
+
+.feedbackcompanyreview blockquote:before {
+    content: '"';
+    padding: 0 2px 0 0;
+}
+
+.feedbackcompanyreview blockquote:after {
+    content: '"';
+    padding: 0 0 0 2px;
+}
+
+.feedbackcompanyreview blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    max-height: 95px;
+}
+
+.feedbackcompanyreview .score-board .total-score {
+    font-size: 18pt;
+}
+
+.feedbackcompanyreview .score-board .score {
+    background: #fc9e1f;
+    border-radius: 40px;
+    font-size: 38px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 0 10px 10px;
+    width: 70px;
+}
+
+.feedbackcompanyreview-widget .score-board b {
+    color: #2d2d2d;
+}
+
+.feedbackcompanyreview-widget .score-board .rating {
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.feedbackcompanyreview-widget .score-board a {
+    font-size: 12pt;
+    display: block;
+    text-decoration: none !important;
+    outline: none;
+}
+
+.feedbackcompanyreview .score-board .number-of-reviews {
+    color: #e63616;
+    font-weight: bold;
+    font-size: 13pt;
+    margin: 4px 0;
+}
+
+.feedbackcompanyreview .score-board .stars {
+    clear: both;
+}
+
+.feedbackcompanyreview .score-board .stars {
+    font-size: 22pt;
+    color: #fecc1d;
+}
+
+.feedbackcompanyreview .score {
+    background: none repeat scroll 0 0 #0099cc;
+    color: #ffffff;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    text-align: center;
+    line-height: 36px;
+    display: block;
+}
+
