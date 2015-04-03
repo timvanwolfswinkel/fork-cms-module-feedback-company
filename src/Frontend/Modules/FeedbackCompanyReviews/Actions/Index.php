@@ -1,10 +1,23 @@
 <?php
 
-/**
- * @author Bart Lagerweij <bart@webleads.nl>
- * @copyright Copyright 2014 by Webleads http://www.webleads.nl
+namespace Frontend\Modules\FeedbackCompanyReviews\Actions;
+
+/*
+ * This file is part of Fork CMS.
+ *
+ * For the full copyright and license information, please view the license
+ * file that was distributed with this source code.
  */
-class FrontendFeedbackcompanyReviewIndex extends FrontendBaseBlock
+
+use Frontend\Core\Engine\Base\Block as FrontendBaseBlock;
+
+/**
+ * This is the overview-action
+ *
+ * @author Bart Lagerweij <bart@webleads.nl>
+ * @author Tim van Wolfswinkel <tim@webleads.nl>
+ */
+class Index extends FrontendBaseBlock
 {
     /**
 	 * Execute the action

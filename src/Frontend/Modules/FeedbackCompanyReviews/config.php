@@ -1,5 +1,7 @@
 <?php
 
+namespace Frontend\Modules\FeedbackCompanyReviews;
+
 /*
  * This file is part of Fork CMS.
  *
@@ -7,19 +9,22 @@
  * file that was distributed with this source code.
  */
 
+use Frontend\Core\Engine\Base\Config as FrontendBaseConfig;
+
 /**
- * This is the configuration-object for the FeedbackcompanyReviews module
+ * This is the configuration-object for the Feedback Company Reviews module
  *
- * @author webleads <fork@webleads.nl>
+ * @author Bart Lagerweij <bart@webleads.nl>
+ * @author Tim van Wolfswinkel <tim@webleads.nl>
  */
-final class FrontendFeedbackcompanyReviewConfig extends FrontendBaseConfig
+final class Config extends FrontendBaseConfig
 {
 	/**
 	 * The default action
 	 *
 	 * @var string
 	 */
-	protected $defaultAction = 'index';
+	protected $defaultAction = 'Index';
 
 	/**
 	 * The disabled actions

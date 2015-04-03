@@ -1,10 +1,23 @@
 <?php
 
-/**
- * @author Bart Lagerweij <bart@webleads.nl>
- * @copyright Copyright 2014 by Webleads http://www.webleads.nl
+namespace Backend\Modules\FeedbackCompanyReviews;
+
+/*
+ * This file is part of Fork CMS.
+ *
+ * For the full copyright and license information, please view the license
+ * file that was distributed with this source code.
  */
-final class BackendFeedbackcompanyReviewConfig extends BackendBaseConfig
+
+use Backend\Core\Engine\Base\Config as BackendBaseConfig;
+
+/**
+ * This is the configuration-object for the FeedbackCompanyReviews module
+ *
+ * @author Bart Lagerweij <bart@webleads.nl>
+ * @author Tim van Wolfswinkel <tim@webleads.nl>
+ */
+final class Config extends BackendBaseConfig
 {
     /**
      * The default action

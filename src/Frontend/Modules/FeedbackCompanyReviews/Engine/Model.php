@@ -1,8 +1,23 @@
 <?php
 
+namespace Frontend\Modules\FeedbackCompanyReviews\Engine;
+
+/*
+ * This file is part of Fork CMS.
+ *
+ * For the full copyright and license information, please view the license
+ * file that was distributed with this source code.
+ */
+
+use Frontend\Core\Engine\Language as FL;
+use Frontend\Core\Engine\Model as FrontendModel;
+
+
 /**
+ * In this file we store all generic functions that we will be using in the FeedbackCompanyReviews module
+ *
  * @author Bart Lagerweij <bart@webleads.nl>
- * @copyright Copyright 2014 by Webleads http://www.webleads.nl
+ * @author Tim van Wolfswinkel <tim@webleads.nl>
  */
 class FrontendFeedbackcompanyReviewModel
 {
@@ -16,7 +31,7 @@ class FrontendFeedbackcompanyReviewModel
 	 */
 	private static function getReviewsFromRemote()
 	{
-		$feedUrl = FrontendModel::getModuleSetting('feedbackcompany_review', 'review_feed_url_' . FRONTEND_LANGUAGE);
+		$feedUrl = FrontendModel::getModuleSetting('FeedbackCompanyReviews', 'review_feed_url_' . FRONTEND_LANGUAGE);
 		if (!empty($feedUrl))
 		{
 			include_once PATH_LIBRARY . '/external/feedbackcompany/feedbackcompany.php';
@@ -55,8 +70,8 @@ class FrontendFeedbackcompanyReviewModel
 	 */
 	public static function getReviewData()
 	{
-		$timeout = FrontendModel::getModuleSetting('feedbackcompany_review', 'review_cache_timeout', self::DEFAULT_CACHE_TIMEOUT);
-		$cacheFilename = FRONTEND_CACHE_PATH . '/feedbackcompany_review/reviews.cache';
+		$timeout = FrontendModel::getModuleSetting('FeedbackCompanyReviews', 'review_cache_timeout', self::DEFAULT_CACHE_TIMEOUT);
+		$cacheFilename = FRONTEND_CACHE_PATH . '/feedback_company_reviews/reviews.cache';
 
 		$reviewData = null;
 
@@ -78,7 +93,7 @@ class FrontendFeedbackcompanyReviewModel
 				{
 					$stars = self::getStars($reviews['score'], $reviews['scoremax']);
 					$bestReview = self::getLastBestReview($reviews);
-					$reviewUrl = FrontendModel::getModuleSetting('feedbackcompany_review', 'review_url_' . FRONTEND_LANGUAGE);
+					$reviewUrl = FrontendModel::getModuleSetting('FeedbackCompanyReviews', 'review_url_' . FRONTEND_LANGUAGE);
 
 					$reviewData = array(
 						'reviews' => $reviews,
@@ -108,15 +123,15 @@ class FrontendFeedbackcompanyReviewModel
 		$stars = array();
 		for ($n = 0; $n < $wholeStars; $n++)
 		{
-			$stars[] = array('title' => FrontendLanguage::getLabel('Star'), 'value' => 'star');
+			$stars[] = array('title' => FL::getLabel('Star'), 'value' => 'star');
 		}
 		for ($n = 0; $n < $halfStars; $n++)
 		{
-			$stars[] = array('title' => FrontendLanguage::getLabel('StarHalfOpen'), 'value' => 'star-half-o');
+			$stars[] = array('title' => FL::getLabel('StarHalfOpen'), 'value' => 'star-half-o');
 		}
 		for ($n = 0; $n < $emptyStars; $n++)
 		{
-			$stars[] = array('title' => FrontendLanguage::getLabel('StarOpen'), 'value' => 'star-o');
+			$stars[] = array('title' => FL::getLabel('StarOpen'), 'value' => 'star-o');
 		}
 
 		return $stars;
@@ -170,5 +185,4 @@ class FrontendFeedbackcompanyReviewModel
 	{
 		touch($cacheFilename);
 	}
-
 }
