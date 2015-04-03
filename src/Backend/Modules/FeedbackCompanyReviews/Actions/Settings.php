@@ -1,12 +1,25 @@
 <?php
 
+/*
+ * This file is part of Fork CMS.
+ *
+ * For the full copyright and license information, please view the license
+ * file that was distributed with this source code.
+ */
+
+use Backend\Core\Engine\Base\ActionEdit as BackendBaseActionEdit;
+use Backend\Core\Engine\Form as BackendForm;
+use Backend\Core\Engine\Language as BL;
+use Backend\Core\Engine\Model as BackendModel;
+use Backend\Modules\FeedbackCompanyReviews\Engine\Model as BackendFeedbackCompanyReviewsModel;
+
 /**
- * Feedback settings screen
+ * This is the settings action, it will display a form to set general Feedback Company Reviews settings.
  *
  * @author Bart Lagerweij <bart@webleads.nl>
- * @copyright Copyright 2014 by Webleads http://www.webleads.nl
+ * @author Tim van Wolfswinkel <tim@webleads.nl>
  */
-class BackendFeedbackcompanyReviewSettings extends BackendBaseActionEdit
+class Settings extends BackendBaseActionEdit
 {
     /**
      * Is the user the main admin user?
@@ -78,7 +91,7 @@ class BackendFeedbackcompanyReviewSettings extends BackendBaseActionEdit
                 BackendModel::setModuleSetting($this->URL->getModule(), 'review_cache_timeout', $feedCacheTimeout->getValue());
 
                 BackendModel::triggerEvent($this->getModule(), 'after_saved_settings');
-                BackendFeedbackcompanyReviewModel::clearFrontendCache();
+                BackendFeedbackCompanyReviewsModel::clearFrontendCache();
 
                 // redirect to the settings page
                 $this->redirect(BackendModel::createURLForAction('settings') . '&report=saved');
