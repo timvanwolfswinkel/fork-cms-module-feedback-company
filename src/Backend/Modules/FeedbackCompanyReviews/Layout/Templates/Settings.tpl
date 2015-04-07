@@ -11,6 +11,10 @@
 			<div class="heading">
 				<h3>{$lblFeedbackCompanyReviewsFeed}</h3>
 			</div>
+            <div class="options">
+                <label for="latestReviewsNumberOfItems">{$lblItemsPerPage|ucfirst}</label>
+                {$ddmLatestReviewsNumItems} {$ddmLatestReviewsNumItemsError}
+            </div>
 			<div class="options">
 				<label for="reviewCacheTimeout">{$lblReviewCacheTimeout|ucfirst}</label>
 				{$txtReviewCacheTimeout} {$txtReviewCacheTimeoutError}

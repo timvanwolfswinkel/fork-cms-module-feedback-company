@@ -31,7 +31,11 @@ class Installer extends ModuleInstaller
 		// install the locale, this is set here because we need the module for this
 		$this->importLocale(dirname(__FILE__) . '/Data/locale.xml');
 
-		$this->setModuleRights(1, 'FeedbackCompanyReviews');
+        // general settings
+        $this->setSetting('FeedbackCompanyReviews', 'latest_reviews_num_items', 10);
+
+        // module rights
+        $this->setModuleRights(1, 'FeedbackCompanyReviews');
 
         // settings navigation
         $navigationSettingsId = $this->setNavigation(null, 'Settings');
@@ -41,5 +45,6 @@ class Installer extends ModuleInstaller
         // add widget
         $this->insertExtra('FeedbackCompanyReviews', 'block', 'FeedbackCompanyReviews');
         $this->insertExtra('FeedbackCompanyReviews', 'widget', 'ScoreBoard', 'ScoreBoard', null, 'N', 1000);
+        $this->insertExtra('FeedbackCompanyReviews', 'widget', 'LatestReviews', 'LatestReviews', null, 'N', 1001);
     }
 }
