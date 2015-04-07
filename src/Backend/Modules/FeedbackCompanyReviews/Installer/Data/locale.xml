@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <locale>
-    <frontend>
-        <core>
+    <Frontend>
+        <Core>
             <item type="label" name="CustomerName">
                 <translation language="nl"><![CDATA[naam van klant]]></translation>
             </item>
@@ -50,10 +50,10 @@
             <item type="label" name="NumberOfReviews">
                 <translation language="nl"><![CDATA[%1$d beoordelingen]]></translation>
             </item>
-        </core>
-    </frontend>
-    <backend>
-        <feedbackcompany_review>
+        </Core>
+    </Frontend>
+    <Backend>
+        <FeedbackCompanyReviews>
             <item type="label" name="FeedbackCompanyReviewsFeed">
                 <translation language="nl"><![CDATA[Feedback Company recente beoordelingen feed]]></translation>
             </item>
@@ -77,14 +77,14 @@ Voorbeeld: https://beoordelingen.feedbackcompany.nl/samenvoordeel/scripts/flexre
                 <translation language="nl"><![CDATA[Vul hier de URL in van de review pagina bij Feedback Company<br />
 Voorbeeld: https://beoordelingen.feedbackcompany.nl/reviews/nnnn/xxxxxxxxx.nl.html]]></translation>
             </item>
-        </feedbackcompany_review>
-        <core>
+        </FeedbackCompanyReviews>
+        <Core>
             <item type="label" name="FeedbackCompanyReviews">
                 <translation language="nl"><![CDATA[Feedback Company Beoordelingen]]></translation>
             </item>
             <item type="label" name="FeedbackCompanyScoreBoard">
                 <translation language="nl"><![CDATA[Feedbackcompany scorebord]]></translation>
             </item>
-        </core>
-    </backend>
+        </Core>
+    </Backend>
 </locale>
