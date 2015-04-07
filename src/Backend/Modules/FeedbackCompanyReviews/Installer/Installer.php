@@ -40,6 +40,6 @@ class Installer extends ModuleInstaller
 
         // add widget
         $this->insertExtra('FeedbackCompanyReviews', 'block', 'FeedbackCompanyReviews');
-        $this->insertExtra('FeedbackCompanyReviews', 'widget', 'FeedbackCompanyScoreBoard', 'score_board', null, 'N', 1000);
+        $this->insertExtra('FeedbackCompanyReviews', 'widget', 'ScoreBoard', 'ScoreBoard', null, 'N', 1000);
     }
 }

@@ -11,7 +11,7 @@ namespace Frontend\Modules\FeedbackCompanyReviews\Engine;
 
 use Frontend\Core\Engine\Language as FL;
 use Frontend\Core\Engine\Model as FrontendModel;
-
+use Webleads\FeedbackCompany;
 
 /**
  * In this file we store all generic functions that we will be using in the FeedbackCompanyReviews module
@@ -19,7 +19,7 @@ use Frontend\Core\Engine\Model as FrontendModel;
  * @author Bart Lagerweij <bart@webleads.nl>
  * @author Tim van Wolfswinkel <tim@webleads.nl>
  */
-class FrontendFeedbackcompanyReviewModel
+class Model
 {
 	/**
 	 *
@@ -35,7 +35,7 @@ class FrontendFeedbackcompanyReviewModel
 		if (!empty($feedUrl))
 		{
 			include_once PATH_LIBRARY . '/external/feedbackcompany/feedbackcompany.php';
-			$obj = new Feedbackcompany();
+			$obj = new FeedbackCompany();
 			$result = $obj->getRecentReviews($feedUrl);
 			return $result;
 		}

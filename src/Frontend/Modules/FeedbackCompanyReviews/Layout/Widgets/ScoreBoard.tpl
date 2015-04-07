@@ -5,7 +5,7 @@
             {option:FeedbackCompanyReviewsWidget.reviews}
                 {option:FeedbackCompanyReviewsWidget.reviews.score}
                     <div itemscope itemtype="http://data-vocabulary.org/Review-aggregate">
-                        <a target="_blank" title="{$SITE_TITLE} {$lblScoreBoardTitle|sprintf:{$FeedbackCompanyReviewsWidget.reviews.noReviews}:{$FeedbackCompanyReviewsWidget.reviews.score}:{$FeedbackcompanyReviewWidget.reviews.scoremax}}" href="{$FeedbackcompanyReviewWidget.url}" class="clearfix">
+                        <a target="_blank" title="{$SITE_TITLE} {$lblScoreBoardTitle|sprintf:{$FeedbackCompanyReviewsWidget.reviews.noReviews}:{$FeedbackCompanyReviewsWidget.reviews.score}:{$FeedbackCompanyReviewsWidget.reviews.scoremax}}" href="{$FeedbackCompanyReviewsWidget.url}" class="clearfix">
                             <div>
                                 <h2>
                                     {$msgFeedbackCompanyScoreBoardIntro|sprintf:{$SITE_TITLE}}

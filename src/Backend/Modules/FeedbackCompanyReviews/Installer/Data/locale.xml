@@ -83,7 +83,7 @@ Voorbeeld: https://beoordelingen.feedbackcompany.nl/reviews/nnnn/xxxxxxxxx.nl.ht
                 <translation language="nl"><![CDATA[Feedback Company Beoordelingen]]></translation>
             </item>
             <item type="label" name="FeedbackCompanyScoreBoard">
-                <translation language="nl"><![CDATA[Feedbackcompany scorebord]]></translation>
+                <translation language="nl"><![CDATA[Feedback Company Score]]></translation>
             </item>
         </Core>
     </Backend>

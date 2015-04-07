@@ -1,6 +1,6 @@
 <?php
 
-namespace Frontend\Modules\Catalog\Widgets;
+namespace Frontend\Modules\FeedbackCompanyReviews\Widgets;
 
 /*
  * This file is part of Fork CMS.
@@ -28,7 +28,7 @@ class ScoreBoard extends FrontendBaseWidget
 	{
 		// call parent
 		parent::execute();
-		$this->addCSS('feedback_company_review.css');
+		$this->addCSS('feedback_company_reviews.css');
 
 		$this->loadTemplate();
 		$this->loadAndParse();
@@ -39,7 +39,6 @@ class ScoreBoard extends FrontendBaseWidget
 	 */
 	private function loadAndParse()
 	{
-
         $reviewData = FrontendFeedbackCompanyReviewsModel::getReviewData();
         if (!empty($reviewData)) {
 			$this->tpl->assign('FeedbackCompanyReviewsWidget', $reviewData);

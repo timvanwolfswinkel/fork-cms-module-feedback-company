@@ -1,10 +1,12 @@
 <?php
 
+namespace Webleads;
+
 /**
  * @author Bart Lagerweij <bart@webleads.nl>
  * @copyright Copyright 2014 by Webleads http://www.webleads.nl
  */
-class Feedbackcompany
+class FeedbackCompany
 {
 	/**
 	 * @param $feedUrl
