@@ -2,14 +2,14 @@
 {include:{$BACKEND_CORE_PATH}/layout/templates/structure_start_module.tpl}
 
 <div class="pageTitle">
-	<h2>{$lblModuleSettings|ucfirst}: {$lblFeedbackcompanyReview}</h2>
+	<h2>{$lblModuleSettings|ucfirst}: {$lblFeedbackCompanyReviews}</h2>
 </div>
 
 {form:settings}
 	<div class="box">
 		<div class="horizontal">
 			<div class="heading">
-				<h3>{$lblFeedbackcompanyReviewFeed}</h3>
+				<h3>{$lblFeedbackCompanyReviewsFeed}</h3>
 			</div>
 			<div class="options">
 				<label for="reviewCacheTimeout">{$lblReviewCacheTimeout|ucfirst}</label>

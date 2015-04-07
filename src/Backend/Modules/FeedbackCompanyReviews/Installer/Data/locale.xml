@@ -35,30 +35,27 @@
             <item type="label" name="ViewAllReviews">
                 <translation language="nl"><![CDATA[bekijk alle beoordelingen]]></translation>
             </item>
-            <item type="message" name="FeedbackcompanyReviewIntro">
+            <item type="message" name="FeedbackCompanyReviewsIntro">
                 <translation language="nl"><![CDATA[Wij zetten feedbackcompany in om beoordelingen te vragen aan onze klanten en te publiceren. Dit heeft voordelen voor jou als consument, maar ook voor onszelf. Je kunt namelijk een betere inschatting maken, met wie je te maken hebt. En wij kunnen leren van jouw feedback.]]></translation>
             </item>
-            <item type="message" name="FeedbackcompanyScoreBoardIntro">
+            <item type="message" name="FeedbackCompanyScoreBoardIntro">
                 <translation language="nl"><![CDATA[Klanten over %s]]></translation>
             </item>
             <item type="label" name="Error">
                 <translation language="nl"><![CDATA[Fout]]></translation>
             </item>
-            <item type="message" name="FeedbackcompanyReviewNoItems">
+            <item type="message" name="FeedbackCompanyReviewsNoItems">
                 <translation language="nl"><![CDATA[Geen reviews gevonden]]></translation>
             </item>
             <item type="label" name="NumberOfReviews">
                 <translation language="nl"><![CDATA[%1$d beoordelingen]]></translation>
             </item>
-
-
-
         </core>
     </frontend>
     <backend>
         <feedbackcompany_review>
-            <item type="label" name="FeedbackcompanyReviewFeed">
-                <translation language="nl"><![CDATA[Feedbackcompany recente beoordelingen feed]]></translation>
+            <item type="label" name="FeedbackCompanyReviewsFeed">
+                <translation language="nl"><![CDATA[Feedback Company recente beoordelingen feed]]></translation>
             </item>
             <item type="label" name="ReviewCacheTimeout">
                 <translation language="nl"><![CDATA[Cache timeout]]></translation>
@@ -73,19 +70,19 @@
                 <translation language="nl"><![CDATA[Feed cache timeout in seconden]]></translation>
             </item>
             <item type="message" name="HelpReviewFeedUrl">
-                <translation language="nl"><![CDATA[Vul hier de URL in van de feedbackcompany XML Feed.<br />
+                <translation language="nl"><![CDATA[Vul hier de URL in van de Feedback Company XML Feed.<br />
 Voorbeeld: https://beoordelingen.feedbackcompany.nl/samenvoordeel/scripts/flexreview/getreviewxml.cfm?ws=nnnnn&publishIDs=1&nor=3&publishDetails=1&publishOnHold=0&sort=desc&emlpass=test]]></translation>
             </item>
             <item type="message" name="HelpReviewUrl">
-                <translation language="nl"><![CDATA[Vul hier de URL in van de review pagina bij feedbackcompany<br />
+                <translation language="nl"><![CDATA[Vul hier de URL in van de review pagina bij Feedback Company<br />
 Voorbeeld: https://beoordelingen.feedbackcompany.nl/reviews/nnnn/xxxxxxxxx.nl.html]]></translation>
             </item>
         </feedbackcompany_review>
         <core>
-            <item type="label" name="FeedbackcompanyReview">
-                <translation language="nl"><![CDATA[Feedbackcompany Beoordelingen]]></translation>
+            <item type="label" name="FeedbackCompanyReviews">
+                <translation language="nl"><![CDATA[Feedback Company Beoordelingen]]></translation>
             </item>
-            <item type="label" name="FeedbackcompanyScoreBoard">
+            <item type="label" name="FeedbackCompanyScoreBoard">
                 <translation language="nl"><![CDATA[Feedbackcompany scorebord]]></translation>
             </item>
         </core>

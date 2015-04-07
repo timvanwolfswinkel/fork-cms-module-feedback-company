@@ -7,10 +7,10 @@
 
                     <p>
                         <span class="score">{$reviews.company.total_score}</span>
-                        {$msgFeedbackcompanyReviewIntro}
+                        {$msgFeedbackCompanyReviewIntro}
                     </p>
 
-                    <span class="logo"><img src="/frontend/modules/feedbackcompany_review/layout/images/feedbackcompany-logo.png" /></span>
+                    <span class="logo"><img src="/frontend/modules/feedback_company_reviews/layout/images/feedbackcompany-logo.png" /></span>
 
                 {/option:reviews.company.total_score}
                 {option:reviews.error}
@@ -18,7 +18,7 @@
                 {/option:reviews.error}
             {/option:reviews}
             {option:!reviews}
-                {$msgFeedbackcompanyReviewNoItems|ucfirst}
+                {$msgFeedbackCompanyReviewsNoItems|ucfirst}
             {/option:!reviews}
         </div>
 
