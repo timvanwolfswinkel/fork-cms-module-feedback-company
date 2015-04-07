@@ -50,6 +50,9 @@
             <item type="label" name="NumberOfReviews">
                 <translation language="nl"><![CDATA[%1$d beoordelingen]]></translation>
             </item>
+            <item type="label" name="FeedbackCompanyLogo">
+                <translation language="nl"><![CDATA[the feedback company]]></translation>
+            </item>
         </Core>
     </Frontend>
     <Backend>

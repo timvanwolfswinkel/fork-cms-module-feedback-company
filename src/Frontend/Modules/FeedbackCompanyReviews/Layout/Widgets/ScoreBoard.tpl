@@ -30,7 +30,7 @@
                                 <p class="number-of-reviews">
                                     <span class="summary">{$lblNumberOfReviews|sprintf:{$FeedbackCompanyReviewsWidget.reviews.noReviews}}</span>
                                 </p>
-                                <span class="logo"><img height="33" width="200" alt="{$lblFeedbackCompanyLogo}" src="/frontend/modules/feedback_company_reviews/layout/images/feedback_company_logo.jpg" /></span>
+                                <span class="logo"><img height="33" width="200" alt="{$lblFeedbackCompanyLogo|ucfirst}" src="../src/Frontend/Modules/FeedbackCompanyReviews/Layout/Images/feedback_company_logo.jpg" /></span>
                                 <div class="rating">
                                     <span itemprop="itemreviewed">{$SITE_TITLE}</span>
                                     <span itemprop="rating" itemscope itemtype="http://data-vocabulary.org/Rating">
