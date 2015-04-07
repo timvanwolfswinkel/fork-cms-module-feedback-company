@@ -13,8 +13,8 @@ This module is under high maintenance and is probably not working proper yet. Th
 ## Installation
 
 * Visit the [Fork CMS Documentation](http://www.fork-cms.com/community/documentation/detail/getting-started/adding-modules) to learn how to install a module.
-* Insert the XML-feed in the module settings ([Example Feed](https://beoordelingen.feedbackcompany.nl/samenvoordeel/scripts/flexreview/getreviewxml.cfm?ws=2789&publishIDs=1&nor=3&publishDetails=1&publishOnHold=0&sort=desc&emlpass=test))
-* Insert the Review-URL in the module settings, you can find this in your accounts settings in the Feedback Company management tool.
+* Insert the XML-feed in the module settings ([example](https://beoordelingen.feedbackcompany.nl/samenvoordeel/scripts/flexreview/getreviewxml.cfm?ws=2789&publishIDs=1&nor=3&publishDetails=1&publishOnHold=0&sort=desc&emlpass=test))
+* Insert the Review-URL in the module settings, you can find this in your account settings in the Feedback Company management tool.
 * Add the scoreboard widget to your page.
 
 ## Support
