@@ -1,6 +1,6 @@
 <?php
 
-namespace Backend\Modules\Catalog\Installer;
+namespace Backend\Modules\FeedbackCompanyReviews\Installer;
 
 /*
  * This file is part of Fork CMS.
