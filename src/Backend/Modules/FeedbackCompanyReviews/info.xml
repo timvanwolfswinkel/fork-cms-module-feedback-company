@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
-	<name>The Feedback Company review</name>
-	<version>0.0.1</version>
+	<name>The Feedback Company Reviews</name>
+	<version>1.0.1</version>
 	<requirements>
-		<minimum_version>3.6.x</minimum_version>
+		<minimum_version>3.6.7</minimum_version>
 	</requirements>
 	<description>
 		<![CDATA[Review the rating you have at The Feedback Company]]>
