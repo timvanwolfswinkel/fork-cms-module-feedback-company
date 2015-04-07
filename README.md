@@ -9,6 +9,7 @@ This module is under high maintenance and is probably not working proper yet. Th
 ## Features
 
 * Show a reviews scoreboard on your website (now displaying star-icons in combination with [Font Awesome](https://github.com/FortAwesome/Font-Awesome))
+* Show a list of the latest reviews
 
 ## Installation
 
@@ -16,6 +17,14 @@ This module is under high maintenance and is probably not working proper yet. Th
 * Insert the XML-feed in the module settings ([example](https://beoordelingen.feedbackcompany.nl/samenvoordeel/scripts/flexreview/getreviewxml.cfm?ws=2789&publishIDs=1&nor=3&publishDetails=1&publishOnHold=0&sort=desc&emlpass=test))
 * Insert the Review-URL in the module settings, you can find this in your account settings in the Feedback Company management tool.
 * Add the scoreboard widget to your page.
+
+## Improvements
+
+* Connect module with API key
+* Send automatic e-mails to users using the Fork CMS Profiles module
+* Review invitation reminder cronjob
+* List with users which have been invited or not
+* Simple e-mail template for invitation
 
 ## Support
 
