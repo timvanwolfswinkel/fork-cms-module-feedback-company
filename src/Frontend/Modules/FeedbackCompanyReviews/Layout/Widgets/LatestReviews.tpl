@@ -9,8 +9,11 @@
             {iteration:LatestReviewsWidget}
                 <div class="review">
                     <span>{$LatestReviewsWidget.score}</span>
+
                     <p>{$LatestReviewsWidget.text}</p>
+
                     <p>{$LatestReviewsWidget.sterkepunten}</p>
+
                     <p>{$LatestReviewsWidget.verbeterpunten}</p>
                 </div>
                 <hr>

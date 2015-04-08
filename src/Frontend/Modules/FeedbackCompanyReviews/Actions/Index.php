@@ -20,19 +20,19 @@ use Frontend\Core\Engine\Base\Block as FrontendBaseBlock;
 class Index extends FrontendBaseBlock
 {
     /**
-	 * Execute the action
-	 */
-	public function execute()
-	{
-		parent::execute();
-		$this->loadTemplate();
-		$this->loadAndParse();
-	}
+     * Execute the action
+     */
+    public function execute()
+    {
+        parent::execute();
+        $this->loadTemplate();
+        $this->loadAndParse();
+    }
 
-	/**
-	 * Load the data, don't forget to validate the incoming data
-	 */
-	private function loadAndParse()
-	{
-	}
+    /**
+     * Load the data, don't forget to validate the incoming data
+     */
+    private function loadAndParse()
+    {
+    }
 }

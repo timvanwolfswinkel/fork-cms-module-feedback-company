@@ -36,7 +36,8 @@
                 <translation language="nl"><![CDATA[bekijk alle beoordelingen]]></translation>
             </item>
             <item type="message" name="FeedbackCompanyReviewsIntro">
-                <translation language="nl"><![CDATA[Wij zetten feedbackcompany in om beoordelingen te vragen aan onze klanten en te publiceren. Dit heeft voordelen voor jou als consument, maar ook voor onszelf. Je kunt namelijk een betere inschatting maken, met wie je te maken hebt. En wij kunnen leren van jouw feedback.]]></translation>
+                <translation language="nl">
+                    <![CDATA[Wij zetten feedbackcompany in om beoordelingen te vragen aan onze klanten en te publiceren. Dit heeft voordelen voor jou als consument, maar ook voor onszelf. Je kunt namelijk een betere inschatting maken, met wie je te maken hebt. En wij kunnen leren van jouw feedback.]]></translation>
             </item>
             <item type="message" name="FeedbackCompanyScoreBoardIntro">
                 <translation language="nl"><![CDATA[Klanten over %s]]></translation>

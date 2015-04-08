@@ -8,11 +8,11 @@ namespace Webleads;
  */
 class FeedbackCompany
 {
-	/**
-	 * @param $feedUrl
-	 * @return mixed|null
-	 */
-	public function getRecentReviews($feedUrl)
+    /**
+     * @param $feedUrl
+     * @return mixed|null
+     */
+    public function getRecentReviews($feedUrl)
     {
         $reviews = null;
         $xmlData = @file_get_contents($feedUrl);
@@ -20,7 +20,7 @@ class FeedbackCompany
             $xml = @simplexml_load_string($xmlData, null, LIBXML_NOCDATA);
             if ($xml) {
                 $json = json_encode($xml);
-                $reviews = json_decode($json, TRUE);
+                $reviews = json_decode($json, true);
             }
         }
         return $reviews;

@@ -24,12 +24,12 @@ class Installer extends ModuleInstaller
      *
      */
     public function install()
-	{
-		// install the module in the database
-		$this->addModule('FeedbackCompanyReviews');
+    {
+        // install the module in the database
+        $this->addModule('FeedbackCompanyReviews');
 
-		// install the locale, this is set here because we need the module for this
-		$this->importLocale(dirname(__FILE__) . '/Data/locale.xml');
+        // install the locale, this is set here because we need the module for this
+        $this->importLocale(dirname(__FILE__) . '/Data/locale.xml');
 
         // general settings
         $this->setSetting('FeedbackCompanyReviews', 'latest_reviews_num_items', 10);

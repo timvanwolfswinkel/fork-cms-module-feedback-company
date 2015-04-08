@@ -18,30 +18,29 @@ use Frontend\Modules\FeedbackCompanyReviews\Engine\Model as FrontendFeedbackComp
  * @author Bart Lagerweij <bart@webleads.nl>
  * @author Tim van Wolfswinkel <tim@webleads.nl>
  */
-
 class ScoreBoard extends FrontendBaseWidget
 {
-	/**
-	 * Execute the extra
-	 */
-	public function execute()
-	{
-		// call parent
-		parent::execute();
-		$this->addCSS('feedback_company_reviews.css');
+    /**
+     * Execute the extra
+     */
+    public function execute()
+    {
+        // call parent
+        parent::execute();
+        $this->addCSS('feedback_company_reviews.css');
 
-		$this->loadTemplate();
-		$this->loadAndParse();
-	}
+        $this->loadTemplate();
+        $this->loadAndParse();
+    }
 
-	/**
-	 * Parse
-	 */
-	private function loadAndParse()
-	{
+    /**
+     * Parse
+     */
+    private function loadAndParse()
+    {
         $reviewData = FrontendFeedbackCompanyReviewsModel::getReviewData();
         if (!empty($reviewData)) {
-			$this->tpl->assign('FeedbackCompanyReviewsWidget', $reviewData);
+            $this->tpl->assign('FeedbackCompanyReviewsWidget', $reviewData);
         }
-	}
+    }
 }
