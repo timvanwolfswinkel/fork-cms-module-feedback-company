@@ -1,6 +1,6 @@
 # Module: Feedback Company Reviews
 
-Feedback Company is a module for [Fork CMS](http://www.fork-cms.com/). Let customers rank your services and or products, show these ranks on your website and in the Google results.
+[Feedback Company](https://www.feedbackcompany.nl/) is a module for [Fork CMS](http://www.fork-cms.com/). Let customers rank your services and or products, show these ranks on your website and in the Google results.
 
 ## Caution!
 
