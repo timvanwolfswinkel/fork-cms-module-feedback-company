@@ -16,6 +16,7 @@ use Frontend\Modules\FeedbackCompanyReviews\Engine\Model as FrontendFeedbackComp
 /**
  * This is a widget for showing a reviews score board
  *
+ * @author Bart Lagerweij <bart@webleads.nl>
  * @author Tim van Wolfswinkel <tim@webleads.nl>
  */
 class LatestReviews extends FrontendBaseWidget
