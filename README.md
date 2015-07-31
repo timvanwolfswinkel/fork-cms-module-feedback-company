@@ -35,4 +35,4 @@ This module is under high maintenance and is probably not working proper yet. Th
 Feel free to contribute any time. This can be done in the following ways:
 
 * Raise an [issue] (https://github.com/timvanwolfswinkel/fork-cms-module-feedback-company/issues)
-* Send a Pull Request with bug fixes and/or new features 
+* Send a [Pull Request] (https://github.com/timvanwolfswinkel/fork-cms-module-feedback-company/pulls) with bug fixes and/or new features 
