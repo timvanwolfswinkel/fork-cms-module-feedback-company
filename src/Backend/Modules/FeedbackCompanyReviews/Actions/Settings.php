@@ -53,13 +53,13 @@ class Settings extends BackendBaseActionEdit
         $this->frm = new BackendForm('settings');
 
         $this->frm->addDropdown('latest_reviews_num_items', array_combine(range(1, 30), range(1, 30)),
-            BackendModel::getModuleSetting($this->URL->getModule(), 'latest_reviews_num_items', 10));
+            $this->get('fork.settings')->get('FeedbackCompanyReviews', 'latest_reviews_num_items');
         $this->frm->addText('review_feed_url',
-            BackendModel::getModuleSetting($this->URL->getModule(), 'review_feed_url_' . BL::getWorkingLanguage()));
+            $this->get('fork.settings')->get('FeedbackCompanyReviews', 'review_feed_url_' . BL::getWorkingLanguage()));
         $this->frm->addText('review_url',
-            BackendModel::getModuleSetting($this->URL->getModule(), 'review_url_' . BL::getWorkingLanguage()));
+            $this->get('fork.settings')->get('FeedbackCompanyReviews', 'review_url_' . BL::getWorkingLanguage()));
         $this->frm->addText('review_cache_timeout',
-            BackendModel::getModuleSetting($this->URL->getModule(), 'review_cache_timeout', 3600));
+            $this->get('fork.settings')->get('FeedbackCompanyReviews', 'review_cache_timeout', 3600));
     }
 
     /**
@@ -94,20 +94,20 @@ class Settings extends BackendBaseActionEdit
             if ($this->frm->isCorrect()) {
                 $feedUrl = htmlspecialchars_decode($feedUrlField->getValue()); // spoon auto-html-escape ?!?
                 $infoUrl = htmlspecialchars_decode($infoUrlField->getValue()); // spoon auto-html-escape ?!?
-                BackendModel::setModuleSetting($this->URL->getModule(), 'latest_reviews_num_items',
+                $this->get('fork.settings')->set('FeedbackCompanyReviews', 'latest_reviews_num_items',
                     (int)$this->frm->getField('latest_reviews_num_items')->getValue());
-                BackendModel::setModuleSetting($this->URL->getModule(), 'review_url_' . BL::getWorkingLanguage(),
+                $this->get('fork.settings')->set('FeedbackCompanyReviews', 'review_url_' . BL::getWorkingLanguage(),
                     $infoUrl);
-                BackendModel::setModuleSetting($this->URL->getModule(), 'review_feed_url_' . BL::getWorkingLanguage(),
+                $this->get('fork.settings')->set('FeedbackCompanyReviews', 'review_feed_url_' . BL::getWorkingLanguage(),
                     $feedUrl);
-                BackendModel::setModuleSetting($this->URL->getModule(), 'review_cache_timeout',
+                $this->get('fork.settings')->set('FeedbackCompanyReviews', 'review_cache_timeout',
                     $feedCacheTimeout->getValue());
 
                 BackendModel::triggerEvent($this->getModule(), 'after_saved_settings');
                 BackendFeedbackCompanyReviewsModel::clearFrontendCache();
 
                 // redirect to the settings page
-                $this->redirect(BackendModel::createURLForAction('settings') . '&report=saved');
+                $this->redirect(BackendModel::createURLForAction('Settings') . '&report=saved');
             }
         }
     }
